@@ -1,27 +1,35 @@
 # EX-05-Feature-Generation
 
 
-## AIM
+# AIM
 To read the given data and perform Feature Generation process and save the data to a file. 
 
 # Explanation
 Feature Generation (also known as feature construction, feature extraction or feature engineering) is the process of transforming features into new features that better relate to the target.
  
 
+# DATE:
+ GITHUB LINK:
+ 
+ COLAB LINK: 
+ 
 # ALGORITHM
-### STEP 1
+
+## STEP 1
 Read the given Data
-### STEP 2
+## STEP 2
 Clean the Data Set using Data Cleaning Process
-### STEP 3
+## STEP 3
 Apply Feature Generation techniques to all the feature of the data set
-### STEP 4
+## STEP 4
 Save the data to the file
 
 
 # CODE
-```
+
 #Data.csv
+
+```
 import pandas as pd   
 import seaborn as sbn 
 df=pd.read_csv("/content/data.csv") 
@@ -43,8 +51,10 @@ df = pd.get_dummies(df, prefix=['Ord_2'], columns=['Ord_2'])
 df.head(10) 
 df = pd.get_dummies(df, prefix=['Ord_1'], columns=['Ord_1']) 
 df.head(10)
-
+```
 #Encoding.csv
+
+```
 import pandas as pd 
 import seaborn as sbn 
 data=pd.read_csv("/content/Encoding Data.csv") 
@@ -61,8 +71,10 @@ data= data.drop(['nom_0'], axis=1)
 data.head(10) 
 data = pd.get_dummies(df, prefix=['bin_2'], columns=['bin_2']) 
 data.head(10)
-
+```
 #Titanic.csv
+
+```
 import pandas as pd 
 import seaborn as sbn 
 dt=pd.read_csv("/content/titanic_dataset.csv") 
@@ -86,7 +98,6 @@ dt = pd.get_dummies(dt, prefix=['Ticket'] ,columns=['Ticket'])
 df.head(10) 
 dt = pd.get_dummies(dt, prefix=['Embarked'] ,columns=['Embarked']) 
 df.head(10)
-
 ```
 
 # OUTPUT
